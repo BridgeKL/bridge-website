@@ -8,6 +8,7 @@ form.addEventListener("submit", (e)=>{
   const auth = authentication(username, password)
 
   if (auth) {
+    window.location.href = "index.html"
     alert("correct")
   }
   else {
