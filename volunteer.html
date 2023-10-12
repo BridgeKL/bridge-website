@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bridge</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico?" type="image/x-icon">
+  </head>
+  <body>
+	<header>
+		<button id="about" onclick="window.location.href='/bridge-website/about.html'">About Us</button>
+		<button id="services" onclick="window.location.href='/bridge-website/services.html'">Services</button>
+		<button id="contacts" onclick="window.location.href='/bridge-website/contacts.html'">Contact Us</button>
+		<button id="login" onclick="window.location.href='/bridge-website/login.html'">Login</button>
+	</header>
+    <main>
+        <h1>Volunteering Services</h1>
+    </main>
+	<h2>We're so excited to have you on board!</h2>
+      <p>If you already have an existing account, log in here. Otherwise, fill in a form and you'll be ready to volunteer!</p>
+      <button id="tologin" onclick="window.location.href='/bridge-website/login.html'" type="button">Log In</button>
+    <h2>Personal details</h2>
+      <form id="signup1">
+          <label for="fullname">Full name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email">
+          <label for="phonenumber">Phone number</label>
+          <input type="tel" id="phonenumber" name="phonenumber">
+          <label for="pw">Set your password</label>
+          <p><i>We recommend choosing a password that you do not use for other sites, as well as a strong one (capital letters, numbers, symbols).</i></p>
+          <input type="text" id="pw" name="pw">
+      </form>
+	<script src="index.js"></script>
+  </body>
+</html>
