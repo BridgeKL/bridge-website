@@ -23,26 +23,28 @@
       <button id="tologin" onclick="window.location.href='/bridge-website/login.html'" type="button">Log In</button>
     <h2>Personal details</h2>
       <div class="tab">
-      <form id="signup1">
+      <form id="signup">
           <label for="email">Email Address</label>
           <p><input type="email" id="email" name="email" oninput="this.className = ''"></p>
           <label for="pw">Set your password</label>
           <p><i>We recommend choosing a password that you do not use for other sites, as well as a strong one (capital letters, numbers, symbols).</i></p>
-          </p><input type="text" id="pw" name="pw"></p>
-          <input type="submit" value="Next"/>
-      </form>
+          </p><input type="text" id="pw" name="pw" oninput="this.className = ''"></p>
       </div>
       <div class="tab">
-      <form id="signup2">
           <label for="fullname">Full name</label>
-          <p><input type="text" id="fullname" name="fullname"></p>
+          <p><input type="text" id="fullname" name="fullname" oninput="this.className = ''"></p>
           <label for="age">Age</label>
-          <p><input type="number" id="age" name="age"></p>
+          <p><input type="number" id="age" name="age" oninput="this.className = ''"></p>
           <label for="phonenumber">Phone number</label>
-          <p><input type="tel" id="phonenumber" name="phonenumber"></p>
-          <input type="submit" value="Next"/>
+          <p><input type="tel" id="phonenumber" name="phonenumber" oninput="this.className = ''"></p>
       </form>
       </div>
-	<script src="./script.js"></script>
+	<div style="overflow:auto;">
+	  <div style="float:right;">
+	    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+	    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+	  </div>
+	</div>
+	<script src="./volunteer.js"></script>
   </body>
 </html>
