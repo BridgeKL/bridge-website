@@ -22,19 +22,27 @@
       <p>If you already have an existing account, log in here. Otherwise, fill in a form and you'll be ready to volunteer!</p>
       <button id="tologin" onclick="window.location.href='/bridge-website/login.html'" type="button">Log In</button>
     <h2>Personal details</h2>
+      <div class="tab">
       <form id="signup1">
-          <label for="fullname">Full name</label>
-          <input type="text" id="fullname" name="fullname">
-          <label for="age">Age</label>
-          <input type="number" id="age" name="age">
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email">
-          <label for="phonenumber">Phone number</label>
-          <input type="tel" id="phonenumber" name="phonenumber">
+          <p><input type="email" id="email" name="email" oninput="this.className = ''"></p>
           <label for="pw">Set your password</label>
           <p><i>We recommend choosing a password that you do not use for other sites, as well as a strong one (capital letters, numbers, symbols).</i></p>
-          <input type="text" id="pw" name="pw">
+          </p><input type="text" id="pw" name="pw"></p>
+          <input type="submit" value="Next"/>
       </form>
+      </div>
+      <div class="tab">
+      <form id="signup2">
+          <label for="fullname">Full name</label>
+          <p><input type="text" id="fullname" name="fullname"></p>
+          <label for="age">Age</label>
+          <p><input type="number" id="age" name="age"></p>
+          <label for="phonenumber">Phone number</label>
+          <p><input type="tel" id="phonenumber" name="phonenumber"></p>
+          <input type="submit" value="Next"/>
+      </form>
+      </div>
 	<script src="./script.js"></script>
   </body>
 </html>
