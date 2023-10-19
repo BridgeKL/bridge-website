@@ -1,0 +1,28 @@
+# Planned Features
+## Home page
+- Slideshow with different pictures 
+- Volunteer now button to volunteer page
+- Top bar to about, services, contacts, and login/volunteer portal pages
+- Carousel showing different projects
+- Mission statement content
+- Footer with links to instagram/email/phone
+## Volunteer page
+- Redirect to login page if they are not a new user (can change)
+- Segmented sign-up page:
+  1. Full name, age, email, phone number, password
+  2. Interested fields
+  3. Online courses interested in
+- Authentication using Firebase Auth
+## About Us page
+- About Us content
+- Links to linkedin
+## Contact Us page
+- Interactive links to instagram, email, phone number
+# Log In page
+- Username, password, forgot password buttons
+- Authentication and email validation/forgot password using Firebase Auth
+# Volunteer portal
+- Calendar that is editable and centrally updatable using Google Calendar
+- Journal (not finalised/researched yet) that is editable and is saved in the cloud
+- (maybe just create a google docs for each person that is private to them)
+- Volunteering opportunities available that they can select from with details
