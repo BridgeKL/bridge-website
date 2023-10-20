@@ -8,6 +8,10 @@
 body {
   	background-color: #bbcde5;
 }
+
+#about {
+	margin: 5% 5%';
+}
 .login {
   	width: 400px;
   	background-color: #ffffff;
