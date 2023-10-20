@@ -1,10 +1,12 @@
+/* #000914, #006494, #ffffff, #bbcde5, #48a9a6 */
+
 * {
   	box-sizing: border-box;
   	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
   	font-size: 16px;
 }
 body {
-  	background-color: #435165;
+  	background-color: #bbcde5;
 }
 .login {
   	width: 400px;
