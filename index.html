@@ -9,17 +9,18 @@
     <link rel="icon" href="./favicon.ico?" type="image/x-icon">
   </head>
   <body>
-	<header>
-		<button id="about" onclick="window.location.href='/bridge-website/about.html'">About Us</button>
-		<button id="services" onclick="window.location.href='/bridge-website/services.html'">Services</button>
-		<button id="contacts" onclick="window.location.href='/bridge-website/contacts.html'">Contact Us</button>
-		<button id="login" onclick="window.location.href='/bridge-website/login.html'">Login</button>
-	</header>
-    <main>
-        <h1>Bridge</h1>
-    </main>
-	<h2>What change can you make today?</h2>
-	<button id="volunteer" onclick="window.location.href='/bridge-website/volunteer.html'" type="button">VOLUNTEER NOW</button>
-	<script src="./script.js"></script>
+	<div id="heading">
+    <input id="bridge_button" type="image" src="images/bridge-stock-image.jpg" onclick="window.location.href='/bridge-website/index.html'">
+    <button id="about" onclick="window.location.href='/bridge-website/about.html'">About Us</button>
+    <button id="services" onclick="window.location.href='/bridge-website/services.html'">Services</button>
+    <button id="contacts" onclick="window.location.href='/bridge-website/contacts.html'">Contact Us</button>
+    <button id="login" onclick="window.location.href='/bridge-website/login.html'">Login</button>
+  </div>
+  <div id="container">
+	  <h1 id="bridgetitle">Bridge</h1>
+    <h2 id="changetext">What change can you make today?</h2>
+	  <button id="volunteer" onclick="window.location.href='/bridge-website/volunteer.html'" type="button">VOLUNTEER NOW</button>
+  </div>
+  <script src="./script.js"></script>
   </body>
 </html>

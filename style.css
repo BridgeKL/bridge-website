@@ -1,17 +1,74 @@
 /* #000914, #006494, #ffffff, #bbcde5, #48a9a6 */
 
+
+
 * {
   	box-sizing: border-box;
-  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	font-family:Tahoma, sans-serif;
   	font-size: 16px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0
 }
 body {
-  	background-color: #bbcde5;
+  	background-color: #d7e3f3;
+}
+#heading {
+	position: aboslute;
+	top: 0%;
+	height: 100px;
+	background-color: rgb(0, 0, 0);
+	padding-bottom: 0;
+}
+#bridge_button {
+	height: 100px;
+	width: auto;
 }
 
-#about {
-	margin: 5% 5%';
+#about, #services, #contacts, #login {
+	float: right;
+	margin-top: 10px;
+	border: none;
+	color:black;
+	background-color: #d7e3f3;
+	padding: 30px 40px;
+	margin: right 0, left 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	margin-right: 5px;
+	transition-duration: 0.4s;
 }
+
+#about:hover, #services:hover, #contacts:hover, #login:hover {
+	background-color: black;
+	color: white;
+}
+
+#container {
+	position: relative;
+	text-align: center;
+	color: black;
+	height: 700px;
+	background: linear-gradient(to top, #000000e8, #000000a6), url(images/helping-stock-image.jpg) no-repeat top center;
+}
+
+#bridgetitle {
+	position: absolute;
+	font-family:Tahoma, sans-serif;
+	top: 20px;
+	left: 20px;
+	font-size: 30px;
+	font-weight: bold
+}
+
+#changetext {
+	position: absolute;
+	top: 70px;
+	left: 30px;
+	font-size: large;
+}
+
 .login {
   	width: 400px;
   	background-color: #ffffff;
