@@ -13,11 +13,36 @@
 body {
   	background-color: #d7e3f3;
 }
-#heading {
-	top: 0%;
-	height: 100px;
-	background-color: rgb(14, 55, 112);
-	padding-bottom: 0;
+
+@media screen and (max-width: 790px) {
+	#heading_mobile {
+		top: 0%;
+		height: 125px;
+		background-color: rgb(14, 55, 112);
+		padding-bottom: 0;
+	}
+	#heading_desktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 791px) {
+	#heading_mobile {
+		display: none;
+	}
+	#heading_desktop {
+		top: 0%;
+		height: 100px;
+		background-color: rgb(14, 55, 112);
+		padding-bottom: 0;
+	}
+}
+
+#burger {
+	height:75px;
+	margin-top:20px;
+	margin-right:40px;
+	float:right;
 }
 #bridge_button {
 	height: 100px;

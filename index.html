@@ -9,7 +9,7 @@
     <link rel="icon" href="./favicon.ico?" type="image/x-icon" />
   </head>
   <body>
-    <div id="heading">
+    <div id="heading_desktop">
       <input
         id="bridge_button"
         type="image"
@@ -41,9 +41,23 @@
         Login
       </button>
     </div>
+    <div id="heading_mobile">
+      <input
+        id="bridge_button"
+        type="image"
+        src="images/bridge-logo.png"
+        onclick="window.location.href='/bridge-website/index.html'"
+      />
+      <input
+        id="burger"
+        type="image"
+        src="images/burger2.png"
+        onclick="openTab()"
+      />
+    </div>
+
     <div id="container">
-      <div id="pad">
-      </div>
+      <div id="pad"></div>
       <h2 id="changetext">What change can you make today?</h2>
       <button
         id="volunteer"
