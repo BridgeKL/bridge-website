@@ -1,73 +1,5 @@
 /* #000914, #006494, #ffffff, #bbcde5, #48a9a6 */
 
-
-
-* {
-  	box-sizing: border-box;
-	font-family:Tahoma, sans-serif;
-  	font-size: 16px;
-	margin-top: 0;
-	margin-left: 0;
-	margin-right: 0
-}
-body {
-  	background-color: #d7e3f3;
-}
-
-@media screen and (max-width: 790px) {
-	#heading_mobile {
-		top: 0%;
-		height: 125px;
-		background-color: rgb(14, 55, 112);
-		padding-bottom: 0;
-	}
-	#heading_desktop {
-		display: none;
-	}
-}
-
-@media screen and (min-width: 791px) {
-	#heading_mobile {
-		display: none;
-	}
-	#heading_desktop {
-		top: 0%;
-		height: 100px;
-		background-color: rgb(14, 55, 112);
-		padding-bottom: 0;
-	}
-}
-
-#burger {
-	height:75px;
-	margin-top:20px;
-	margin-right:40px;
-	float:right;
-}
-#bridge_button {
-	height: 100px;
-	width: auto;
-}
-
-#about, #services, #contacts, #login {
-	float: right;
-	margin-top: 10px;
-	border: none;
-	background-color: transparent;
-	color: white;
-	padding: 30px 40px;
-	margin: right 0, left 0;
-	text-align: center;
-	text-decoration: none;
-	font-size: 15px;
-	margin-right: 5px;
-	transition-duration: 0.4s;
-}
-
-#about:hover, #services:hover, #contacts:hover, #login:hover {
-	background-color: rgb(39, 92, 166);
-}
-
 #container {
 	position: relative;
 	top: 0px;
@@ -78,15 +10,15 @@ body {
 }
 
 #pad {
+	background-color: transparent;
 	height:150px
 }
-#bridgetitle {
-	position: relative;
-	font-family:Tahoma, sans-serif;
-	top: 20px;
-	left: 20px;
-	font-size: 30px;
-	font-weight: bold
+
+#changetext {
+	font-size: 40px;
+	background-color: transparent;
+	color: white;
+	text-justify: center;
 }
 
 #volunteer {
@@ -101,11 +33,39 @@ body {
 	padding: 10px 10px
 }
 
-#changetext {
-	font-size: 40px;
-
-
-	color: white;
-	text-justify: center;
+#bridgetitle {
+	background-color: transparent;
+	position: relative;
+	font-family:Tahoma, sans-serif;
+	/* top: 20px;
+	left: 20px; */
+	font-size: 30px;
+	font-weight: bold
 }
 
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slideimg {
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+}
+.slide {
+	display: inline-block;
+}
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    margin: auto;
+}

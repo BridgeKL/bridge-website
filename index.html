@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bridge</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="icon" href="./favicon.ico?" type="image/x-icon" />
   </head>
@@ -34,12 +35,12 @@
       >
         Contact Us
       </button>
-      <button
-        id="login"
-        onclick="window.location.href='/bridge-website/login.html'"
-      >
-        Login
-      </button>
+      <input
+        id="login-button"
+        type="image"
+        src="images/profile-logo.png"
+        onclick="window.location.href='/bridge-website/index.html'"
+      />
     </div>
     <div id="heading_mobile">
       <input
@@ -51,7 +52,7 @@
       <input
         id="burger"
         type="image"
-        src="images/burger_icon.png"
+        src="images/burger-icon.png"
         onclick="openTab()"
       />
     </div>
@@ -67,7 +68,38 @@
         VOLUNTEER NOW
       </button>
     </div>
-    <h1 id="bridgetitle">Our Ongoing Projects</h1>
+    <h2 id="bridgetitle">Our Ongoing Projects</h1>
+    <div id="slideshow">
+      <div class="slide">
+        <img src="./images/sample_photos/1.jpg"class="slideimg">
+        <h3>NAME OF PROJECT ONE</h3>
+        <p>Description One</p> 
+      </div>
+      <div class="slide">
+        <img src="./images/sample_photos/2.jpg"class="slideimg">
+        <h3>NAME OF PROJECT TWO</h3>
+        <p>Description Two</p>
+      </div>
+      <div class="slide">
+        <img src="./images/sample_photos/3.jpg"class="slideimg">
+        <h3>NAME OF PROJECT THREE</h3>
+        <p>Description Three</p>
+      </div>
+      <div class="slide">
+        <img src="./images/sample_photos/4.jpg"class="slideimg">
+        <h3>NAME OF PROJECT FOUR</h3>
+        <p>Description Four</p>
+      </div>
+      <div style="text-align:center; margin:-5vh;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <a id="prev-button" onclick="prevSlide()"></a>
+      <a id="next-button" onclick="nextSlide()"></a>
+    </div>
+    
     <script src="./script.js"></script>
   </body>
 </html>

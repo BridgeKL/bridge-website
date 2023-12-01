@@ -1,0 +1,103 @@
+/* #000914, #006494, #ffffff, #bbcde5, #48a9a6 */
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family:Tahoma, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(14, 55, 112);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 790px) {
+  #heading_mobile {
+      margin-top: 0;
+      top: 0%;
+      height: 125px;
+      background-color: rgb(14, 55, 112);
+      padding-bottom: 0;
+  }
+  #heading_desktop {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 791px) {
+  #heading_mobile {
+      display: none;
+  }
+  #heading_desktop {
+      margin-top: 0;
+      top: 0%;
+      height: 100px;
+      background-color: rgb(14, 55, 112);
+      padding-bottom: 0;
+  }
+}
+
+#burger {
+  height:75px;
+  margin-top:20px;
+  margin-right:40px;
+  float:right;
+}
+#bridge_button {
+  height: 100px;
+  width: auto;
+}
+#login-button {
+  height: 80px;
+  width: auto;
+  right: 30px;
+  margin-left: 30px
+}
+
+#about, #services, #contacts, #login {
+  float: right;
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 30px 40px;
+  margin: right 0, left 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 5px;
+  transition-duration: 0.4s;
+}
+
+#about:hover, #services:hover, #contacts:hover, #login:hover {
+  background-color: rgb(39, 92, 166);
+}
+
+#container {
+  position: relative;
+  top: 0px;
+  text-align: center;
+  color: black;
+  height: 700px;
+  background: linear-gradient(to top, #0e377000, #0e3770ff), url(images/index-background.jpeg) no-repeat top center;
+}
