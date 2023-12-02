@@ -8,7 +8,7 @@
     font-family:Tahoma, sans-serif;
     font-size: 16px;
     color: white;
-    background-color: rgb(14, 55, 112);
+    /* background-color: rgb(14, 55, 112); */
     /* margin-top: 0; */
     margin-left: 0;
     margin-right: 0;
@@ -113,9 +113,14 @@ h3 {
   height: 60px;
   width: auto;
   float: left;
-  margin-right: 20px
-
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 20px
+}
+#footer {
+  height: 100px
 }
 #footer > a {
-	color: transparent;
+	color: rgb(14, 55, 112);
+  
 }
