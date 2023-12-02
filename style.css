@@ -9,7 +9,7 @@
     font-size: 16px;
     color: white;
     background-color: rgb(14, 55, 112);
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-left: 0;
     margin-right: 0;
 }
@@ -38,6 +38,7 @@ h3 {
       height: 125px;
       background-color: rgb(14, 55, 112);
       padding-bottom: 0;
+      text-align: right;
   }
   #heading_desktop {
       display: none;
@@ -50,10 +51,11 @@ h3 {
   }
   #heading_desktop {
       margin-top: 0;
-      top: 0%;
       height: 100px;
       background-color: rgb(14, 55, 112);
       padding-bottom: 0;
+      text-align: right;
+
   }
 }
 
@@ -66,30 +68,35 @@ h3 {
 #bridge_button {
   height: 100px;
   width: auto;
-}
-#login-button {
-  height: 80px;
-  width: auto;
-  right: 30px;
-  margin-left: 30px
+  float:left;
 }
 
-#about, #services, #contacts, #login {
-  float: right;
-  margin-top: 10px;
+
+#about, #services, #contacts, #login-button {
+  position: relative;
   border: none;
   background-color: transparent;
   color: white;
-  padding: 30px 40px;
-  margin: right 0, left 0;
+  padding: 41px 35px;
+  top: 0;
+  margin-right: 0;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
-  margin-right: 5px;
   transition-duration: 0.4s;
 }
 
-#about:hover, #services:hover, #contacts:hover, #login:hover {
+#login-button {
+  position: relative;
+  height: 100px;
+  width: auto;
+  float: right;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+#about:hover, #services:hover, #contacts:hover, #login-button:hover {
   background-color: rgb(39, 92, 166);
 }
 
@@ -100,4 +107,15 @@ h3 {
   color: black;
   height: 700px;
   background: linear-gradient(to top, #0e377000, #0e3770ff), url(images/index-background.jpeg) no-repeat top center;
+}
+
+#instagram-button, #email-button, #whatsapp-button {
+  height: 60px;
+  width: auto;
+  float: left;
+  margin-right: 20px
+
+}
+#footer > a {
+	color: transparent;
 }
