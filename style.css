@@ -100,15 +100,6 @@ h3 {
   background-color: rgb(39, 92, 166);
 }
 
-#container {
-  position: relative;
-  top: 0px;
-  text-align: center;
-  color: black;
-  height: 700px;
-  background: linear-gradient(to top, #0e377000, #0e3770ff), url(images/index-background.jpeg) no-repeat top center;
-}
-
 #instagram-button, #email-button, #whatsapp-button {
   height: 60px;
   width: auto;

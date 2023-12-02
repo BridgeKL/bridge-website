@@ -24,7 +24,7 @@ const moveSlide = () =>{
   }
 
 nextBtn.addEventListener('click',()=>{
-    if(index===slides.length-1) return index;
+    if(index===slides.length-1) index=-1;
     index++;
     removeDotsOpacity();
     dots[index].style.opacity='1'
@@ -32,7 +32,7 @@ nextBtn.addEventListener('click',()=>{
 });
 
 prevBtn.addEventListener('click',()=>{
-    if(index===0) return index;
+    if(index===0) index=slides.length;
     index--;
     removeDotsOpacity();
     dots[index].style.opacity='1'
@@ -47,3 +47,38 @@ dot.addEventListener("click",(e)=>{
     moveSlide();
 })
 });
+
+const autoPlaySlide = () =>{
+  if(index===slides.length-1) index= -1;
+  index++;
+  removeDotsOpacity();
+  dots[index].style.opacity='1'
+  moveSlide();
+}
+
+
+const slides1 = document.querySelectorAll('.slide1');
+const prevBtn1 = document.getElementById('prev-btn1');
+const nextBtn1 = document.getElementById('next-btn1');
+const dots1 = document.querySelectorAll('.dot1')
+console.log(slides.length)
+
+let index1 = 0
+slides1.forEach((slide1,index1)=>{
+  slide1.style.left=`${index1*100}vw`
+});
+const moveSlide1 = () =>{
+    slides1.forEach((slide1)=>{
+      slide1.style.transform=`translateX(-${index1*100}vw)`;
+    });
+  }
+
+const autoPlaySlide1 = () =>{
+  if(index1===slides.length-1) index1= -1;
+  index1++;
+  moveSlide1();
+}
+
+window.onload=()=>{
+  setInterval(autoPlaySlide1,3000);
+}
