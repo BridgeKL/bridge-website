@@ -109,9 +109,10 @@ h3 {
   margin-left: 20px
 }
 #footer {
-  height: 100px
+  float: bottom;
+  height: 100px;
+  background-color: white;
 }
 #footer > a {
-	color: rgb(14, 55, 112);
-  
+	color: transparent;
 }
