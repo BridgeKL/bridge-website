@@ -64,6 +64,7 @@ h3 {
   margin-top:20px;
   margin-right:40px;
   float:right;
+  background-color: transparent;
 }
 #bridge_button {
   height: 100px;
