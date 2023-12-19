@@ -1,8 +1,5 @@
 /* #000914, #006494, #ffffff, #bbcde5, #48a9a6 */
 
-
-
-
 * {
     box-sizing: border-box;
     font-family:Tahoma, sans-serif;
@@ -14,21 +11,27 @@
     margin-right: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6{
   text-align: center;
   background-color: transparent;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+p {
+  background-color: transparent;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50pt;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40pt;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 30pt;
 }
 
 @media screen and (max-width: 790px) {
@@ -64,6 +67,7 @@ h3 {
   margin-top:20px;
   margin-right:40px;
   float:right;
+  background-color: transparent;
 }
 #bridge_button {
   height: 100px;
