@@ -1,3 +1,44 @@
 body {
     background-color: rgb(14, 55, 112);
 }
+
+#imgleft {
+    float: left;
+}
+
+#imgright {
+    float: right;
+}
+
+img {
+    display: flex; 
+    width: 35vw
+}
+
+#sidetextleft {
+    margin-left: 5vw;
+    float: left;
+    text-align: left
+}
+
+#sidetextright {
+    margin-right: 5vw;
+    float: right;
+    text-align: right;
+    right: 0;
+    width: 50%
+}
+
+#sidetextleft, #sidetextright {
+    display: block;
+}
+
+
+p {
+    font-size: 20pt;
+    width: 45vw
+}
+
+h2 {
+    width: 45vw
+}
