@@ -24,6 +24,8 @@ h2 {
     /* color: rgb(14, 55, 112); */
     color: white;
     background-color:transparent;
+    /* font-family: 'Cormorant' */
+    font-family: 'EB Garamond', serif;
 }
 
 h4 {
@@ -32,6 +34,7 @@ h4 {
     text-align: left;
     font-weight: lighter;
     text-decoration: none;
+    font-family: 'Manrope';
 }
 h4 >b {
     /* color: rgb(14, 55, 112); */

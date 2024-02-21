@@ -10,7 +10,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'EB Garamond', serif;
 }
 
 
@@ -186,13 +186,38 @@ body {
 	color: rgba(128, 128, 128, 0.5);
 }
 
-#mission, #about-us {
+#about-us-image {
+	width: 100vw;
+	position: relative;
+	z-index: 0;
+}
+
+#about-us-container {
+	display: inline-block;
+	height: 300px;
+	width: 100vw;
+	position: relative;
+	background-color: white;
+	background-image:url(images/about-us.png);
+	z-index: 1;
+	background-size: 100vw;
+	background-position: bottom;
+	text-align: center;
+}
+#about-us {
+	width:100px;
+	display: inline-block;
+	height: 200px;
+	width: 75vw;
+}
+#mission {
 	display: inline-block;
 	/* margin-top: 0; */
 	width: 100vw;
 	/* min-height: 200px; */
 	position: relative;
 	background-color: white;
+	z-index: 1;
 }
 #mission > h2, #mission > p, #mission > p > i, #about-us > h2, #about-us > p, #about-us > p> i {
 	color: #0e3770ff;
